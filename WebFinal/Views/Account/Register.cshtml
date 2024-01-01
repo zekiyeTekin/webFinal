@@ -1,0 +1,55 @@
+﻿@using WebFinal.Service.ViewModel;
+@model RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<body class="loginimg">
+
+<div class="row">
+    <div class="col-4 offset-4">
+            <h1 style="font-size: 3rem; -webkit-text-fill-color:azure; font-family: 'Carter One';" class="display-4 text-center pb-2">@ViewData["Title"] </h1>
+
+    </div>
+</div>
+
+
+<div class="row">
+    <div class=" loginbox col-4 ">
+
+        <div asp-validation-summary="ModelOnly" class="text-danger small">
+           @* input hataları dışındaki hataları göstermesi için yaptım.*@
+        </div>
+
+      <form method="post">
+          <div class="form-group mb-3">
+                <label style=" -webkit-text-fill-color:azure; font-family: 'Carter One';" asp-for="UserName" class="form-label">Username</label>
+                <input asp-for="UserName" class="form-control framed" placeholder="johndoe" />
+                <span asp-validation-for="UserName" class="text-danger small"> </span>
+          </div>
+            <div class="form-group mb-3">
+                <label style="-webkit-text-fill-color:azure; font-family: 'Carter One';" asp-for="Mail" class="form-label">E-Mail</label>
+                <input asp-for="Mail" class="form-control framed" placeholder="ornek@gmail.com" />
+                <span asp-validation-for="Mail" class="text-danger small"> </span>
+            </div>
+            <div class="form-group mb-3">
+                <label style="-webkit-text-fill-color:azure; font-family: 'Carter One';" asp-for="Password" class="form-label">Password</label>
+                <input asp-for="Password" type="password" class="form-control framed" placeholder="P@ssW0rd!" />
+                <span asp-validation-for="Password" class="text-danger small"> </span>
+            </div>
+            <div class="form-group mb-3">
+                <label style="-webkit-text-fill-color:azure; font-family: 'Carter One';" asp-for="RePassword" class="form-label">RePassword</label>
+                <input asp-for="RePassword" type="password" class="form-control framed" placeholder="P@ssW0rd!" />
+                <span asp-validation-for="RePassword" class="text-danger small"> </span>
+            </div>
+            <div class="form-group d-grid mb-3">
+                <button type="submit" style="font-family: 'Carter One'; background-color:#F16FFF;" class="btn btn-primary d-block framed"><i class="fa-solid fa-user-plus me-2"></i>Register</button>
+            </div>
+      </form>
+
+    </div>
+</div>
+
+
+    </body>

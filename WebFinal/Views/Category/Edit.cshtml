@@ -1,0 +1,36 @@
+﻿@model WebFinal.Service.Models.Category
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 class="col-md-4 offset-4">Kategori Düzenle</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4 offset-4">
+        <form asp-action="Save">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="mb-2 form-control framed" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Kaydet" style=" background-color: RoyalBlue; border-radius: 8px;" class=" mt-2 mb-2 btn btn-primary raise" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<p>
+    <a asp-action="Index" style=" font-family: 'Carter One'; background-color: RoyalBlue; border-radius: 8px;" class="btn btn-sm btn-primary rounded-40 raise"><i class="fas fa-fast-backward "></i> Listeye Geri Dön</a>
+</p>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

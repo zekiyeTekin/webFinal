@@ -1,0 +1,101 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebFinal
+build_property.RootNamespace = WebFinal
+build_property.ProjectDir = C:\Users\Zekiye Tekin\source\repos\WebFinal\WebFinal\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\Zekiye Tekin\source\repos\WebFinal\WebFinal
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/Account/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/Category/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/Giyim/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2l5aW1cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/Giyim/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2l5aW1cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/Giyim/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2l5aW1cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/Giyim/_GiyimCE.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2l5aW1cX0dpeWltQ0UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/Home/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/Shared/_Messages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZXNzYWdlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/Taki/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFraVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/Taki/New.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFraVxOZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Zekiye Tekin/source/repos/WebFinal/WebFinal/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-jlfx8ccn7c

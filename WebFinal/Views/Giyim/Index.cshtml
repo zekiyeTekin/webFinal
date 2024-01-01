@@ -1,0 +1,70 @@
+﻿@model IEnumerable<WebFinal.Service.Models.GiyimDTO>
+
+
+@*Kategori Adı :
+@Model.Name*@
+
+<h2 class="text-center " style="font-size: 2rem; font-family: 'Carter One';">
+    Giyim Sayfası
+</h2>
+
+<br />
+<br />
+
+
+@if(TempData["success"]!=null)
+{
+    @*<div class="alert alert-success" role="alert">
+        @TempData["success"];
+    </div>*@
+
+    @section Scripts{
+    <script>
+        toastr.success('@TempData["success"]');
+    </script>
+    }
+
+
+}@if (TempData["error"] != null)
+{
+    @*<div class="alert alert-danger" role="alert">
+        @TempData["error"];       
+    </div>*@
+    @section Scripts{
+    <script>
+        toastr.error('@TempData["error"]');
+    </script>
+    }
+
+}
+<table class="table table-bordered">
+    <tr>
+        
+        <th>Adı</th>
+        <th>Tür</th>
+        <th>Cinsiyet</th>
+        <th>Kategori</th>
+    </tr>
+
+
+@foreach (var item in Model)
+{
+ 
+    <tr>
+        
+        <td>@item.Name</td>
+        <td>@item.Tur</td>
+        <td>@item.Gender</td>
+        <td>@item.CategoryName</td>
+            <td class="d-flex justify-content-end">
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-info me-2" style="background-color:#CC0066; -webkit-text-fill-color:azure; font-family: 'Carter One'; margin-right:1rem">Düzenle</a>
+                <a asp-action="Delete" asp-route-id="@item.Id" style="background-color:#C60A0A; font-family: 'Carter One';" class="btn btn-danger">Sil</a>
+        </td>
+    </tr>
+}
+
+</table>
+ 
+<p class="d-flex justify-content-end">
+    <a asp-action="Create" style="font-family: 'Carter One'; background-color: RoyalBlue;" class="btn btn-primary"> Yeni Giyim Ekle</a>
+</p>

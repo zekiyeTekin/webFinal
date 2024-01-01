@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Profil Bilgileri Güncelle";
+}
+
+
+<body class="profileimg">
+
+
+<div class="row">
+    <div class="col-6 offset-3">
+        <h1 style="font-size: 2.75rem; font-family: 'Carter One';" class="display-4 border-bottom text-center pb-2">@ViewData["Title"] </h1>
+
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-4 offset-4 ">
+        <div class="mb-4">
+            <div asp-validation-summary="All" class="text-danger small"> </div>
+            </div>
+        
+        <form method="post" asp-action="ProfileChangeUserName">
+           <div class="form-group">
+                <label style="font-family: 'Carter One';" class="form-label medium">Kullanıcı Adı Güncelle</label>
+                <div class="input-group mb-3">
+                    <input type="text" name="username" class="form-control framed" placeholder="Zekiye Tekin" value="@ViewData["Username"]" />
+                    <button class="btn btn-secondary framed" style=" background-color:#CC0066; -webkit-text-fill-color:azure;" type="submit"><i class="fa-solid fa-floppy-disk me-2"></i> SAVE </button>
+
+                </div>
+           </div>
+        </form>
+
+        <form method="post" asp-action="ProfileChangePassword">
+            <div class="form-group">
+                <label style="font-family: 'Carter One';" class="form-label medium">Şifre Güncelle</label>
+                <div class="input-group ">
+                    <input type="password" name="password" class="form-control framed" placeholder="P@ssW0rd!" />
+                    <button class="btn btn-secondary framed" style=" background-color:#CC0066; -webkit-text-fill-color:azure;" type="submit"><i class="fa-solid fa-floppy-disk me-2"></i> SAVE </button>
+
+                </div>
+                @if (ViewData["result"] != null && ViewData["result"] == "Şifre Değişti")
+                {
+                    <span class="text-success small">Password güncellendi</span>
+                }
+            </div>
+        </form>
+
+    </div>
+</div>
+
+</body>
+@section Scripts{
+
+    @if (ViewData["result"] != null && ViewData["result"] == "Şifre Değişti")
+    {
+         <script>
+            toastr["success"]("Password update", "Şifreniz Başarıyla Değiştirilmiştir")
+             </script>
+
+    }
+   
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+}
+

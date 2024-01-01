@@ -1,0 +1,35 @@
+﻿@using WebFinal.Service.Models;
+@model IEnumerable<User>
+
+
+<div class="row text-center">
+    <div class="col mb-2">
+        <h1 style=" font-family: 'Carter One';" class="display-4">Admin Page</h1>
+
+    </div>
+
+</div>
+
+@*Hoşgeldiniz @TempData["UserName"]*@
+
+<table class="table table-striped">
+    <thead>
+        <th >Üye Kullanıcı Ad Bilgisi</th>
+        <th>Üye Email Bilgisi</th>
+    </thead>
+    <body>
+        @foreach (var item in Model)
+        {
+
+        <tr>
+            <td>@item.UserName</td>
+            <td>@item.Email</td>
+           @* <td>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-info">Düzenle</a>
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Sil</a>
+            </td>*@
+        </tr>
+        }
+    </body>
+
+</table>

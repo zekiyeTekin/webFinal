@@ -1,0 +1,68 @@
+﻿@model IEnumerable<WebFinal.Service.Models.Category>
+
+
+@*Kategori Adı :
+@Model.Name*@
+
+<h2 class="text-center" style="font-size: 2rem; font-family: 'Carter One';">
+    Kategoriler
+</h2>
+
+
+
+@if(TempData["success"]!=null)
+{
+    @*<div class="alert alert-success" role="alert">
+        @TempData["success"];
+    </div>*@
+
+    @section Scripts{
+    <script>
+        toastr.success('@TempData["success"]');
+    </script>
+    }
+
+}
+@if (TempData["error"] != null)
+{
+    @*<div class="alert alert-danger" role="alert">
+        @TempData["error"];       
+    </div>*@
+    @section Scripts{
+    <script>
+        toastr.error('@TempData["error"]');
+    </script>
+    }
+
+}
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Adı</th>
+    </tr>
+
+
+@foreach (var item in Model)
+{
+
+        <tr class="table-bordered">
+        <td>@item.Id</td>
+        <td>@item.Name</td>
+            <td class="d-flex justify-content-end">
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-info" style="background-color:#CC0066; -webkit-text-fill-color:azure; font-family: 'Carter One'; margin-right:1rem">Düzenle</a>
+
+                <a asp-action="Delete" asp-route-id="@item.Id" style="background-color:#C60A0A; font-family: 'Carter One';" class="btn btn-danger">Sil</a>
+        </td>
+    </tr>
+}
+
+</table>
+
+
+<p class="d-flex justify-content-end">
+    <a asp-action="Create" class="btn btn-primary" style="font-family: 'Carter One'; background-color: RoyalBlue;">
+        <i class="fas fa-plus-circle me-2"></i> Yeni Kategori Ekle</a>
+</p>
+

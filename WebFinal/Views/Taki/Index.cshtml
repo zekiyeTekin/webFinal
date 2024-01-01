@@ -1,0 +1,46 @@
+﻿@using Microsoft.IdentityModel.Tokens;
+@model IEnumerable<WebFinal.Service.Models.Taki>
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2 class="text-center" style="font-size: 2rem; font-family: 'Carter One';">
+    Aksesuarlar</h2>
+
+<table class="table table-bordered">  
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.TakiAd)</th>
+            <th>@Html.DisplayNameFor(model => model.Description)</th>
+            <th>@Html.DisplayNameFor(model => model.Price)</th>
+        </tr>
+    
+        @foreach (var taki in Model)
+        {
+            <tr class="table-bordered">
+                <td>
+                    <img src="~/images/@taki.ProfileImage"
+                         class="rounded-circle"
+                         height="50" width="50"
+                     asp-append-version="true" />
+                    @taki.TakiAd
+                </td>
+                <td>@taki.Description</td>
+                <td>@taki.Price</td>
+
+                <td class="d-flex justify-content-center">
+                     <a asp-action="Delete" asp-route-id="@taki.Id" style="background-color:#C60A0A; font-family: 'Carter One';" class="btn btn-danger">Sil</a>
+                </td>
+            </tr>
+        } 
+</table>
+
+<p class="d-flex justify-content-end">
+    <a asp-action="New" style="font-family: 'Carter One';  background-color: RoyalBlue; border-radius: 8px;" class="btn btn-primary rounded-40 ">
+        <i class="fas fa-plus-circle me-2"></i>Yeni Aksesuar Ekle</a>
+</p>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
